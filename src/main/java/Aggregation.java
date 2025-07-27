@@ -18,7 +18,14 @@ import java.util.*;
 public class Aggregation {
 
     public static void main(String str[]){
+        List<Transactions> transactions = new ArrayList<>();
 
+        transactions.add(new Transactions("A1", 1000, TransactionsType.DEPOSIT));
+        transactions.add(new Transactions("A1", 500, TransactionsType.WITHDRAWAL));
+        transactions.add(new Transactions("A2", 200, TransactionsType.WITHDRAWAL));
+
+
+        System.out.println(calBalance(transactions));
     }
 
 }
