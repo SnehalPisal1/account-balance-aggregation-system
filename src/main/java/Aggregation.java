@@ -17,6 +17,8 @@ import java.util.*;
 
 public class Aggregation {
 
+    public static void main(String str[]){
 
+    }
 
 }
