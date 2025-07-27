@@ -13,3 +13,10 @@ Output: { "A1": 500, "A2": -1 }
  */
 
 
+import java.util.*;
+
+public class Aggregation {
+
+
+
+}
