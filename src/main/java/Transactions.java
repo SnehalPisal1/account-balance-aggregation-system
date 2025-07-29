@@ -16,10 +16,9 @@ public class Transactions {
 
     String accountId;
     int amount;
-    Aggregation.TransactionsType type;
+   TransactionsType type;
 
-
-    public Transactions(String accountId, int amount, Aggregation.TransactionsType type) {
+    public Transactions(String accountId, int amount, TransactionsType type) {
         this.accountId = accountId;
         this.amount = amount;
         this.type = type;
