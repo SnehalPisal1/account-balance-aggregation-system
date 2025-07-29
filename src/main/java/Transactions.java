@@ -40,11 +40,11 @@ public class Transactions {
         this.amount = amount;
     }
 
-    public Aggregation.TransactionsType getType() {
+    public TransactionsType getType() {
         return type;
     }
 
-    public void setType(Aggregation.TransactionsType type) {
+    public void setType(TransactionsType type) {
         this.type = type;
     }
 }
