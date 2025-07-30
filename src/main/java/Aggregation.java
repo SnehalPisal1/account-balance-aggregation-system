@@ -28,4 +28,7 @@ public class Aggregation {
         System.out.println(calBalance(transactions));
     }
 
+    public static Map<String,Integer> calBalance(List<Transactions> transactions) {
+    }
+
 }
