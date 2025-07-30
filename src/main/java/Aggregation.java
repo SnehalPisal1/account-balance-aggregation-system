@@ -29,6 +29,9 @@ public class Aggregation {
     }
 
     public static Map<String,Integer> calBalance(List<Transactions> transactions) {
+        Map<String,Integer> result = new LinkedHashMap<>();
+
+        return result;
     }
 
 }
