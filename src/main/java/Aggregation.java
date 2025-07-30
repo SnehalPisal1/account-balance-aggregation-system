@@ -31,6 +31,25 @@ public class Aggregation {
     public static Map<String,Integer> calBalance(List<Transactions> transactions) {
         Map<String,Integer> result = new LinkedHashMap<>();
 
+        for(Transactions transaction : transactions){
+
+            int currentAmount = transaction.getAmount();
+
+            if(transaction.getType().equals(TransactionsType.DEPOSIT)){
+
+                result.put(transaction.getAccountId(), result.getOrDefault(transaction.getAccountId(), 0) + currentAmount);
+
+                System.out.println(result.get(transaction.getAccountId()));
+            }
+
+            else{
+                System.out.println( "id : " + transaction.getAccountId());
+
+                int amount = result.getOrDefault(transaction.getAccountId(), 0) - currentAmount;
+                result.put(transaction.getAccountId(), amount > 0 ? amount : -1 );
+
+            }
+        }
         return result;
     }
 
